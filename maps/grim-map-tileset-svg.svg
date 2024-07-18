@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Deep water -->
+  <rect x="0" y="0" width="16" height="16" fill="#0a1f2e"/>
+  
+  <!-- Shallow water -->
+  <rect x="16" y="0" width="16" height="16" fill="#1a3f5c"/>
+  
+  <!-- Grass -->
+  <rect x="32" y="0" width="16" height="16" fill="#2c4d3e"/>
+  
+  <!-- Forest -->
+  <rect x="48" y="0" width="16" height="16" fill="#1f3b2e"/>
+  
+  <!-- Mountain -->
+  <rect x="0" y="16" width="16" height="16" fill="#4a6855"/>
+  <polygon points="4,28 8,20 12,28" fill="#2c4d3e"/>
+  
+  <!-- Hill -->
+  <rect x="16" y="16" width="16" height="16" fill="#3d5d4c"/>
+  <polygon points="20,28 24,20 28,28" fill="#2c4d3e"/>
+  
+  <!-- Road -->
+  <rect x="32" y="16" width="16" height="16" fill="#2c4d3e"/>
+  <rect x="36" y="16" width="8" height="16" fill="#3d3d3d"/>
+  
+  <!-- Bridge -->
+  <rect x="48" y="16" width="16" height="16" fill="#1a3f5c"/>
+  <rect x="52" y="16" width="8" height="16" fill="#635147"/>
+  
+  <!-- Settlement -->
+  <rect x="0" y="32" width="16" height="16" fill="#2c4d3e"/>
+  <rect x="4" y="36" width="8" height="8" fill="#8b0000"/>
+  
+  <!-- Ruins -->
+  <rect x="16" y="32" width="16" height="16" fill="#2c4d3e"/>
+  <rect x="20" y="36" width="4" height="4" fill="#635147"/>
+  <rect x="24" y="40" width="4" height="4" fill="#635147"/>
+  
+  <!-- Swamp -->
+  <rect x="32" y="32" width="16" height="16" fill="#2a3f2e"/>
+  <circle cx="36" cy="36" r="2" fill="#1a3f5c"/>
+  <circle cx="42" cy="42" r="2" fill="#1a3f5c"/>
+  
+  <!-- Farmland -->
+  <rect x="48" y="32" width="16" height="16" fill="#3d5d4c"/>
+  <path d="M48,32 l16,16 M48,40 l8,8 M56,32 l8,8" stroke="#4a6855" stroke-width="1"/>
+</svg>

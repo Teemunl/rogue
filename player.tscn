@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://c72lu0qvh54aq"]
+
+[ext_resource type="Texture2D" uid="uid://d0vv1xq057v34" path="res://characters/pixil-frame-0(1).png" id="1_2u1eq"]
+[ext_resource type="Script" path="res://player.gd" id="1_gf5ue"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7nilk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5ekkd"]
+radius = 5.09902
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s7dal"]
+radius = 5.09902
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_gf5ue")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 2
+texture_repeat = 1
+position = Vector2(3, -1)
+scale = Vector2(0.0960645, 0.0798797)
+texture = ExtResource("1_2u1eq")
+hframes = 4
+
+[node name="ColorRect" type="ColorRect" parent="Sprite2D"]
+offset_left = -3.0
+offset_top = -8.0
+offset_right = 2.0
+offset_bottom = 6.0
+color = Color(1, 1, 1, 0.172549)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7nilk")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5ekkd")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_s7dal")
+debug_color = Color(0.0602672, 0.594419, 0.721672, 0.42)
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+
+[node name="hurtTimer" type="Timer" parent="."]
